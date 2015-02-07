@@ -87,6 +87,7 @@
     [self.overlayTitle setTextColor:[UIColor whiteColor]];
     [self.overlayTitle setFont:[UIFont fontWithName:@"Helvetica-Bold" size:32.0]];
     [self.overlayTitle setTextAlignment:NSTextAlignmentCenter];
+    self.overlayTitle.backgroundColor = [UIColor clearColor]; //robot su, fix ios6's default white background
 
     // PageControl configuration.
     [self.pageControl setNumberOfPages:[self numberOfPages]];
